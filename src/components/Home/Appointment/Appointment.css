@@ -1,0 +1,31 @@
+.appointment-full {
+    margin-top: 123px ! important;
+    background-image: url('../../../image/MaskGroup4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 420px;
+    background-position: center;
+}
+.text-mix{
+    color: #00BCD4
+}
+.appointment-full::before{
+    content:  "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(36, 41, 73);
+    opacity: .8;
+    top: 0;
+}
+
+.appointment-full img{
+    height: 550px;
+    transform: translateY(-130px);
+}
+
+.appointment-text {
+    margin-top: 45px;
+}

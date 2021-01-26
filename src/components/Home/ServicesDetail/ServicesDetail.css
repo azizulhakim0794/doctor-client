@@ -1,0 +1,40 @@
+.services-img {
+    height: 65px;
+    width: 65px;
+    margin-left: 135px;
+}
+
+@media only screen and (max-width: 1199px) {
+    
+    img.card-img-top.services-img {
+        margin-left: 110px ! important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    
+    img.card-img-top.services-img {
+        margin-left: 70px ! important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    
+    img.card-img-top.services-img {
+        margin-left: 204px ! important;
+    }
+    section.services-container {
+        margin-top: 345px;
+    }
+    .border-btm{
+        border-bottom: 1px solid #dad7d7;
+        width: 324px;
+        text-align: center;
+        margin: auto;
+    
+    }
+}
+@media only screen and (max-width: 500px) {
+    
+    img.card-img-top.services-img {
+        margin-left: 180px  ! important;
+    }
+}

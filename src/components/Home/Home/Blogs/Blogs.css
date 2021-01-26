@@ -1,0 +1,12 @@
+.blogs:hover{
+    background-image: linear-gradient(75deg, #19D3AE,#0fcfec);
+    color: white;
+    border-radius: 2%;
+    
+}
+.blogs .card-footer :hover{
+    background-color:none;
+}
+.blogs .text-mix .text-secondary:hover {
+    color:white;
+}
