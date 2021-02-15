@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
 import './Doctors.css'
-
 const Doctors = () => {
+    const [doctors, setDoctors] = useState([])
+    useEffect( () => {
+        fetch('http://localhost:5000/doctors')
+        .then(res => res.json())
+        .then(data => setDoctors(data))
+    }, [])
+
     return (
-        <div className="top-margin container">
-            <h4 className="text-mix text-center">OUR DOCTORS</h4>
-            <div className="row d-flex justify-content-center">
-                <Doctor/>
-                <Doctor/>
-                <Doctor/>
+        <section className="doctors">
+            <div className="container">
+                <h5 className="text-center  text-primary mb-5">Our Doctors</h5>
+                <div className="row">
+                    {
+                     doctors.map(doctor =><Doctor key={doctor._id} doctor={doctor} />)
+                    }
+                    
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

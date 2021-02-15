@@ -1,0 +1,16 @@
+.login-img {
+    background-image: url('../../image/Group\ 140.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    background-position: center;
+    margin-left: 77px;
+}
+.forms.col-md-6 {
+    margin: auto;
+}
+input.form-control.border-btm {
+    border: none ! important;
+    border-bottom: 1px solid #ced4da ! important;
+    border-radius: none ! important;
+}

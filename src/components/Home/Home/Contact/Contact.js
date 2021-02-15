@@ -13,7 +13,7 @@ const Contact = () => {
                     </div>
                     <div className="mb-3 d-flex justify-content-center">
 
-                        <input type="email" className="form-control col-md-9 " id="exampleFormControlInput1" placeholder="Subject*" />
+                        <input type="email" className="form-control col-md-9 " id="exampleFormControlInput2" placeholder="Subject*" />
                     </div>
                     <div className="mb-3 d-flex justify-content-center">
                         <textarea className="form-control col-md-9" placeholder="Message*" id="exampleFormControlTextarea1" rows="6"></textarea>

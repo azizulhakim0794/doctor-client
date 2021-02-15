@@ -1,16 +1,19 @@
 import React from 'react';
-import doctor from '../../../image/doctor-sm.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
-const Doctor = () => {
+const Doctor = ({doctor}) => {
     return (
-        <div className="col-md-4">
-            <div>
-                <img className="img-fluid" src={doctor} alt=""/>
+        <div className="col-md-4 ">
+            <div className="d-flex justify-item-center">
+            {
+            doctor.image ? <img className="doctors-img" style={{height: '200px'}} src={`data:image/png;base64,${doctor.image.img}`}/>
+            :
+            <img  className="doctors-img" style={{height: '200px'}} className="img-fluid mb-3" src={`http://localhost:5000/${doctor.img}`} alt=""/>
+        }
             </div>
             <div className="text-center">
-                <h3>Dr.Amir Khan</h3>
+                <h3>{doctor.name}</h3>
                 <p><FontAwesomeIcon className="text-primary" icon={faPhoneAlt}/> +880-131-78493</p>
             </div>
         </div>

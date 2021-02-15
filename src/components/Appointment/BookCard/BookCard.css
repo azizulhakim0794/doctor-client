@@ -1,0 +1,6 @@
+.ReactModal__Content.ReactModal__Content--after-open {
+    width: 500px;
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+    border-radius: 10px ! important;
+}

@@ -1,0 +1,13 @@
+.full-slideBar {
+    background-image: linear-gradient(to bottom right,#bbe0bd, #00BCD4);
+    color: #fff;
+    height: 600px;
+}
+.dashBtn{
+    padding: 12px;
+    cursor: pointer;
+    margin: 4px 0px;
+}
+div.dashBtn:hover{
+    background-color: #69d0c7;
+}
